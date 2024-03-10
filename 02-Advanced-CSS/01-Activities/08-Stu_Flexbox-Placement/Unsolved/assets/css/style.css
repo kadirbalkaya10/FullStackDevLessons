@@ -50,6 +50,8 @@ footer {
 
 .product-slideshow {
   display: flex;
+  /* Aligning elemnents to center */
+  align-items: center;
 }
 
 .product-image {

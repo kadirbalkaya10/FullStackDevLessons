@@ -7,14 +7,17 @@ body {
   margin: 0;
 }
 
+/* Flex-wrap will wrap elements if they dont fit in screen ,it will show in secon row or column */
 main {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 2%;
 }
 
 .main-header {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 60px;
   background: #13293d;
   color: #fff;

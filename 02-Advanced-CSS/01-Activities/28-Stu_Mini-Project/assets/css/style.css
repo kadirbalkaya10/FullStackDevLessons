@@ -1,0 +1,96 @@
+:root {
+  --primaryBackgroundColor: rgb(36, 36, 36);
+  --linearBackgroundColor: linear-gradient(#53022b, #860746);
+  --fontColorWhite: #fff;
+  --fontColorPurple: #bb0a63;
+}
+
+body {
+  background-color: var(--primaryBackgroundColor);
+  font-size: 16px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: var(--fontColorWhite);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100%;
+  padding: 10px;
+}
+
+header h1 {
+  padding: 5px;
+  margin-bottom: 10px;
+  font-size: 36px;
+  color: var(--fontColorPurple);
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--primaryBackgroundColor);
+  border: 2px dashed #fff;
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 5px 5px 20px var(--fontColorPurple);
+}
+
+.card-header {
+  position: absolute;
+  top: -10px;
+  background-color: var(--primaryBackgroundColor);
+  border: 1px solid #fff;
+  color: var(--fontColorPurple);
+  font-weight: bold;
+  font-size: 24px;
+  width: 90%;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.card-title {
+  margin: 2px;
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: lighter;
+  color: var(--fontColorPurple);
+  width: 100%;
+}
+
+.card-content {
+  background: var(--linearBackgroundColor);
+  height: 100%;
+  width: 100%;
+  margin: 2px;
+  border-radius: 5px;
+}
+
+.card-content pre {
+  white-space: pre-wrap;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.card-content pre code {
+  margin: 0;
+  display: flex;
+  justify-content: start;
+  line-height: 1.5em;
+}
